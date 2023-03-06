@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+
+    $('button').click(function (e) {
+        e.preventDefault();
+    });
+
+
     $('#hamburger').click(function () {
         $(this).children('.bars').toggleClass('open-menu');
         $(this).siblings('.navbar').slideToggle();
@@ -7,30 +13,30 @@ $(document).ready(function () {
     });
 
 
-        $('.hero-banner').slick({
-            dots: false,
-            infinite: false,
-            arrows: false,
-            speed: 800,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-        });
-    
+    $('.hero-banner').slick({
+        dots: false,
+        infinite: false,
+        arrows: false,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
 
-        $('.testimonial-slider').slick({
-            dots: true,
-            infinite: false,
-            arrows: false,
-            speed: 800,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-        });
-    
 
-    
-    
-    
-    
-    
-    
-})
+    $('.testimonial-slider').slick({
+        dots: true,
+        infinite: false,
+        arrows: false,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+
+
+
+
+
+
+
+
+});
